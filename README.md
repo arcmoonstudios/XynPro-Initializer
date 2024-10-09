@@ -89,10 +89,10 @@ XynPro/
 
 🙏 Acknowledgements
 
-💼 Insurance Sales - for motivating me to find a new trade.
-🧠 Liner AI - for having the best AI resource on research papers and documents.
-🤖 ChatGPT - for generating enough terrible code that it inspired me to learn programming.
-👩‍💼 Luna - an "overly-attemptive secretary" personality AI coding assistant I created on Claude.ai.
-👪 My Parents - for never giving up on me as a person, regardless of my struggle with commitment.
-👶 My Children - for giving me the motivation to exist and persevere.
-❤️ Valina - for her love and support, and dealing with my crazy self.
+- 💼 **Insurance Sales** - for motivating me to find a new trade.
+- 🧠 **Liner AI** - for having the best AI resource on research papers and documents.
+- 🤖 **ChatGPT** - for generating enough terrible code that it inspired me to learn programming.
+- 👩‍💼 **Luna** - an "overly-attemptive secretary" personality AI coding assistant I created on Claude.ai.
+- 👪 **My Parents** - for never giving up on me as a person, regardless of my struggle with commitment.
+- 👶 **My Children** - for giving me the motivation to exist and persevere.
+- ❤️ **Valina** - for her love and support, and dealing with my crazy self.

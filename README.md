@@ -59,25 +59,25 @@ Behold, the glorious structure of your project:
 
 
 {}/
-├── 📂 src/
-│   ├── 📂 constants/
-│   │   └── 📄 mod.rs
-│   ├── 📂 omnixtracker/
-│   │   ├── 📄 omnixerror.rs
-│   │   ├── 📄 omnixmetry.rs 
-│   │   └── 📄 mod.rs
-│   ├── 📂 utils/
-│   │   ├── 📄 lxsl.rs 
-│   │   └── 📄 mod.rs
-│   └── 📄 lib.rs
-│   └── 📄 main.rs
-├── 📂 tests/
-├── 📂 Xdocs/
-├── 📂 Xtls/
-├── 📄 .gitignore
-├── 📄 Cargo.toml
-├── 📄 LICENSE
-└── 📄 README.md
+├── src/
+│   ├── constants/
+│   │   └── mod.rs
+│   ├── omnixtracker/
+│   │   ├── omnixerror.rs
+│   │   ├── omnixmetry.rs
+│   │   └── mod.rs
+│   ├── utils/
+│   │   ├── lxsl.rs
+│   │   └── mod.rs
+│   ├── lib.rs
+│   └── main.rs
+├── tests/
+├── Xdocs/
+├── Xtls/
+├── .gitignore
+├── Cargo.toml
+├── LICENSE
+└── README.md
 
 
 📜 License: This project is licensed under the MIT License. See the LICENSE file for all the legal jazz.

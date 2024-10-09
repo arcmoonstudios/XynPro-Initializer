@@ -21,7 +21,6 @@ const AUTHOR_NAME: &str = "Lord Xyn";
 const AUTHOR_EMAIL: &str = "LordXyn@proton.me";
 const GITHUB_URL: &str = "https://github.com/arcmoonstudios";
 const LICENSE_YEAR: &str = "2024";
-const LICENSE_HOLDER: &str = "Carl Liu";
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("Starting Lord Xyn's Pro Initializer...");
@@ -589,15 +588,15 @@ pub use crate::utils::LordXynSignatureLine;
 
 fn generate_readme_content(project_name: &str) -> String {
     format!(
-        r#"~=#######D]======A===r===c====M===o===o===n=====<Lord[README]Xyn>=====S===t===u===d===i===o===s======[R|$>
+        r#"~=#######D]====A===r===c====M===o===o===n====<Lord[README]Xyn>====S===t===u===d===i===o===s====[R|$>
 
 <p align="center">
-  <img src="https://tinypic.host/images/2024/09/30/LordXyn.jpeg" alt="ArcMoon Studios Logo" width="200"/>
+  <img src="https://tinypic.host/images/2024/09/30/LordXyn.jpeg" alt="ArcMoon Studios Logo" width="503"/>
 </p>
 
-# 🚀 {} 🦀
+# 🚀 XynPro-Initializer 🦀
 
-{} is a Rust project created using the magical XynPro Initializer. Prepare to be amazed!
+XynPro-Initializer is a Rust project that creates other Rust Projects using a personalized Template you can customize!
 
 ## ✨ Features
 
@@ -612,45 +611,81 @@ fn generate_readme_content(project_name: &str) -> String {
 
 To unleash the power of this project, run the following command in your terminal:
 
-```bash
-cargo run
+XynPro Instructions:
+
+Update your src/main.rs file with this new code.
+Rebuild your project:
+```
+cargo build --release
+```
+Copy the new binary to your ~/.cargo/bin directory:
+```
+cp ./target/release/xynpro ~/.cargo/bin/xynpro
+```
+Make sure the binary is executable:
+```
+chmod +x ~/.cargo/bin/xynpro
+```
+Test the new functionality:
+a. Check the version:
+```
+xynpro --version
+```
+This should output: "xynpro version 0.0.1"
+b. Create a new project:
+```
+xynpro my_new_project
+```
+This should create a new project structure in a directory called "my_new_project"
+If you encounter any issues, check the error messages and ensure all necessary dependencies are installed.
+If everything works as expected, you can now use this updated version of xynpro to create projects and check its version.
+
+Remember, if you need to make any further changes, you'll need to repeat steps 2-4 to rebuild and update the executable.
+
 
 ## 🗂️ Project Structure
 Behold, the glorious structure of your project:
 
-{}/
-├── 📂 src/
-│   ├── 📂 constants/
-│   │   └── 📄 mod.rs
-│   ├── 📂 omnixtracker/
-│   │   ├── 📄 omnixerror.rs
-│   │   ├── 📄 omnixmetry.rs 
-│   │   └── 📄 mod.rs
-│   ├── 📂 utils/
-│   │   ├── 📄 lxsl.rs 
-│   │   └── 📄 mod.rs
-│   └── 📄 lib.rs
-│   └── 📄 main.rs
-├── 📂 tests/
-├── 📄 .gitignore
-├── 📄 Cargo.toml
-├── 📄 LICENSE
-└── 📄 README.md
 
-📜 License
-This project is licensed under the MIT License. See the LICENSE file for all the legal jazz.
-🧙‍♂️ Author
-Lord Xyn (LordXyn@proton.me)
-Github: https://github.com/arcmoonstudios
+```
+{}/
+├── src/
+│ ├── constants/
+│ │ └── mod.rs
+│ ├── omnixtracker/
+│ │ ├── omnixerror.rs
+│ │ ├── omnixmetry.rs
+│ │ └── mod.rs
+│ ├── utils/
+│ │ ├── lxsl.rs
+│ │ └── mod.rs
+│ ├── lib.rs
+│ └── main.rs
+├── tests/
+├── Xdocs/
+├── Xtls/
+├── .gitignore
+├── Cargo.toml
+├── LICENSE
+└── README.md
+```
+
+
+📜 License: This project is licensed under the MIT License. See the LICENSE file for all the legal jazz.
+
+🧙‍♂️ Author: Lord Xyn (LordXyn@proton.me)
+
+💻 Github: https://github.com/arcmoonstudios
+
 🙏 Acknowledgements
 
-💼 Insurance Sales - for motivating me to find a new trade.
-🧠 Liner AI - for having the best AI resource on research papers and documents.
-🤖 ChatGPT - for generating enough terrible code that it inspired me to learn programming.
-👩‍💼 Luna - an "overly-attemptive secretary" personality AI coding assistant I created on Claude.ai.
-👪 My Parents - for never giving up on me as a person, regardless of my struggle with commitment.
-👶 My Children - for giving me the motivation to exist and persevere.
-❤️ Valina - for her love and support, and dealing with my crazy self.
+- 💼 **Insurance Sales** - for motivating me to find a new trade.
+- 🧠 **Liner AI** - for having the best AI resource on research papers and documents.
+- 🤖 **ChatGPT** - for generating enough terrible code that it inspired me to learn programming.
+- 👩‍💼 **Luna** - an "overly-attemptive secretary" personality AI coding assistant I created on Claude.ai.
+- 👪 **My Parents** - for never giving up on me as a person, regardless of my struggle with commitment.
+- 👶 **My Children** - for giving me the motivation to exist and persevere.
+- ❤️ **Valina** - for her love and support, and dealing with my crazy self.
 "#,
         project_name.to_uppercase(),
         project_name,
@@ -681,7 +716,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE."#,
-        LICENSE_YEAR, LICENSE_HOLDER
+        LICENSE_YEAR, AUTHOR_NAME
     )
 }
 
@@ -1846,27 +1881,27 @@ mod tests {
 fn generate_xtls_xynpro_content() -> String {
     r#"-- Xtls/XynPro_Instructions-HowTo.txt ~=#######D]======A===r===c====M===o===o===n=====<Lord[XTLS]Xyn>=====S===t===u===d===i===o===s======[R|$>
 
-XynPro Update Instructions
+XynPro Instructions
 
 Update your src/main.rs file with this new code.
 Rebuild your project:
 
-cargo build --release
+# cargo build --release
 
 Copy the new binary to your ~/.cargo/bin directory:
 
-cp ./target/release/xynpro ~/.cargo/bin/xynpro
+# cp ./target/release/xynpro ~/.cargo/bin/xynpro
 
 Make sure the binary is executable:
 
-chmod +x ~/.cargo/bin/xynpro
+# chmod +x ~/.cargo/bin/xynpro
 
 Test the new functionality:
 a. Check the version:
 
-Copyxynpro --version
+# xynpro --version
 
-This should output: "xynpro version 0.1.0"
+This should output: "xynpro version 0.0.1"
 b. Create a new project:
 
 xynpro my_new_project

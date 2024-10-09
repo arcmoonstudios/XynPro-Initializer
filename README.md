@@ -1,4 +1,4 @@
-~=#######D]======A===r===c====M===o===o===n=====<Lord[README]Xyn>=====S===t===u===d===i===o===s======[R|$>
+~=#######D]====A===r===c====M===o===o===n====<Lord[README]Xyn>====S===t===u===d===i===o===s====[R|$>
 
 <p align="center">
   <img src="https://tinypic.host/images/2024/09/30/LordXyn.jpeg" alt="ArcMoon Studios Logo" width="200"/>

@@ -64,7 +64,6 @@ fn create_project_structure(project_path: &Path, project_name: &str) -> Result<(
 
     create_xtls_files(project_path)?;
     create_xdocs_files(project_path)?;
-    create_tests_files(project_path)?;
     create_utils_files(project_path)?;
     create_omnixtracker_files(project_path)?;
     create_file(project_path, ".env", &generate_env_content())?;
@@ -1777,7 +1776,7 @@ fn test_rotate_log_file() {
 }
 
 fn generate_utils_lxsl_tests_content(project_name: &str) -> String {
-    format!(r#"// tests/utils_lxsl_tests.rs ~=#######D]======A===r===c====M===o===o===n=====<Lord[TESTS]Xyn>=====S===t===u===d===i===o===s======[R|$>
+    format!(r##"// tests/utils_lxsl_tests.rs ~=#######D]======A===r===c====M===o===o===n=====<Lord[TESTS]Xyn>=====S===t===u===d===i===o===s======[R|$>
 
 #[cfg(test)]
 mod tests {
@@ -1875,8 +1874,9 @@ mod tests {
         assert!(!LordXynSignatureLine::should_skip_file("file.rs"), "File with .rs extension should not be skipped");
     }
 }
-"#, project_name)
+"##, project_name)
 }
+
 
 fn generate_xtls_xynpro_content() -> String {
     r#"-- Xtls/XynPro_Instructions-HowTo.txt ~=#######D]======A===r===c====M===o===o===n=====<Lord[XTLS]Xyn>=====S===t===u===d===i===o===s======[R|$>

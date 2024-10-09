@@ -58,19 +58,20 @@ Remember, if you need to make any further changes, you'll need to repeat steps 2
 Behold, the glorious structure of your project:
 
 
+```
 XynPro/
 ├── src/
-│   ├── constants/
-│   │   └── mod.rs
-│   ├── omnixtracker/
-│   │   ├── omnixerror.rs
-│   │   ├── omnixmetry.rs
-│   │   └── mod.rs
-│   ├── utils/
-│   │   ├── lxsl.rs
-│   │   └── mod.rs
-│   ├── lib.rs
-│   └── main.rs
+│ ├── constants/
+│ │ └── mod.rs
+│ ├── omnixtracker/
+│ │ ├── omnixerror.rs
+│ │ ├── omnixmetry.rs
+│ │ └── mod.rs
+│ ├── utils/
+│ │ ├── lxsl.rs
+│ │ └── mod.rs
+│ ├── lib.rs
+│ └── main.rs
 ├── tests/
 ├── Xdocs/
 ├── Xtls/
@@ -78,6 +79,7 @@ XynPro/
 ├── Cargo.toml
 ├── LICENSE
 └── README.md
+```
 
 
 📜 License: This project is licensed under the MIT License. See the LICENSE file for all the legal jazz.

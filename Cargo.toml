@@ -1,0 +1,38 @@
+[package]
+name = "xynpro-initializer"
+version = "0.0.7"
+edition = "2021"
+authors = ["Lord Xyn <LordXyn@proton.me>"]
+description = "A custom Rust project generator that creates 'DR-Xyn's Rust-EZ-n-LayZ' project structure"
+repository = "https://github.com/ArcMoonStudios/xynpro-initializer"
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+anyhow = "1.0"
+git2 = "0.19.0"
+log = "0.4.20"
+rand = "0.8.5"
+thiserror = "1.0.46"
+walkdir = "2.3"
+
+[[bin]]
+name = "xynpro"
+path = "src/main.rs"
+
+[profile.dev]
+debug = true
+lto = false
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[profile.release]
+codegen-units = 1
+debug = false
+lto = true
+opt-level = "z"
+
+[workspace]
+resolver = "2"

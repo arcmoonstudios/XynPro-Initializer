@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Base directory containing your Rust project
+BASE_DIR=$(pwd)
+
+# Loop through each directory in the src folder
+for dir in $(find src -mindepth 1 -maxdepth 1 -type d); do
+    # Extract submodule name
+    submodule=$(basename "$dir")
+
+    # Dockerfile path inside the submodule directory
+    dockerfile_path="$BASE_DIR/$dir/Dockerfile"
+
+    # Create Dockerfile if it doesn't exist
+    if [[ ! -f "$dockerfile_path" ]]; then
+        echo "Creating Dockerfile for $submodule..."
+
+        # Generate the Dockerfile content dynamically
+        cat > "$dockerfile_path" <<EOF
+# Base image with Rust and Cargo
+FROM rust:1.70 as builder
+
+# Set the working directory
+WORKDIR /usr/src/$submodule
+
+# Copy the Cargo.toml and src directory into the Docker container
+COPY Cargo.toml .
+COPY src/$submodule src/$submodule
+
+# Build the Rust project
+RUN cargo build --release
+
+# Use a minimal base image for running the built application
+FROM debian:buster-slim
+COPY --from=builder /usr/src/$submodule/target/release/$submodule /usr/local/bin/$submodule
+
+# Run the application
+CMD ["$submodule"]
+EOF
+
+        echo "Dockerfile for $submodule created."
+    else
+        echo "Dockerfile for $submodule already exists."
+    fi
+done
